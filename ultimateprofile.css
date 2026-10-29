@@ -1,0 +1,36 @@
+/* Ultimate Profile - Author: Rumpa - BSD 3-Clause */
+.up_card { --up-accent: #5a7fb0; margin-bottom: 10px; border-radius: 6px; overflow: hidden; border: 1px solid var(--up-accent); }
+.up_cover { height: 140px; background: var(--up-accent); overflow: hidden; }
+.up_cover img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.up_body { padding: 12px 15px; border-top: 4px solid var(--up-accent); }
+.up_tagline { font-size: 1.3em; font-weight: bold; margin: 0 0 4px; }
+.up_mood { color: #777; margin: 0 0 8px; }
+.up_about { margin: 8px 0; overflow-wrap: anywhere; }
+.up_links { list-style: none; margin: 8px 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.up_links a { display: inline-block; padding: 3px 10px; border-radius: 12px; background: var(--up-accent); color: #fff; text-decoration: none; font-size: .9em; }
+.up_links a:hover { opacity: .85; }
+.up_discord { display: inline-block; padding: 3px 10px; border-radius: 12px; border: 1px solid var(--up-accent); font-size: .9em; }
+.up_meta { margin-top: 8px; font-size: .85em; color: #777; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; }
+.up_form input[type="text"], .up_form textarea { width: 95%; max-width: 100%; box-sizing: border-box; }
+.up_form textarea { min-height: 130px; }
+@media (max-width: 600px) { .up_cover { height: 90px; } }
+
+.up_badges, .up_buddies, .up_visitors { margin: 8px 0; }
+.up_badges ul, .up_visitors ul { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.up_badges li { padding: 2px 9px; border-radius: 4px; border: 1px solid var(--up-accent); font-size: .85em; }
+.up_visitors li, .up_buddies li { font-size: .9em; }
+.up_buddies ul { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 12px; }
+.up_style_dark .up_body { background: #1f2430; color: #e6e6e6; }
+.up_style_dark .up_body a { color: #8fc1ff; }
+.up_style_dark .up_links a { color: #fff; }
+.up_style_dark .up_mood, .up_style_dark .up_meta { color: #aab; }
+.up_style_gradient .up_body { background: linear-gradient(135deg, var(--up-accent), #1c1c28); color: #fff; }
+.up_style_gradient .up_body a { color: #fff; text-decoration: underline; }
+.up_style_gradient .up_links a { background: rgba(255,255,255,.2); text-decoration: none; }
+.up_style_gradient .up_mood, .up_style_gradient .up_meta { color: #eee; }
+.up_style_minimal { border: 0; border-radius: 0; border-bottom: 2px solid var(--up-accent); }
+.up_style_minimal .up_cover { display: none; }
+.up_style_minimal .up_body { border-top: 0; }
+.up_style_minimal .up_links a { background: none; color: var(--up-accent); border: 1px solid var(--up-accent); }
+.up_buddy_table { width: 100%; border-collapse: collapse; }
+.up_buddy_table td { padding: 3px 6px; border-bottom: 1px solid #ddd; }
